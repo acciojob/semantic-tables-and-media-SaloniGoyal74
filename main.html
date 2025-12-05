@@ -1,42 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Semantic Table & Media List</title>
 </head>
-
 <body>
 
-	<table style="border:1px black solid">
-		<thead>
-			<tr>
-				<th style="border:1px black solid">Roll numbers</th>
-				<th style="border:1px black solid">Names</th>
-			</tr>
-		</thead>
+<!-- SEMANTIC TABLE -->
+<table border="1">
+    <thead>
+        <tr>
+            <th>Roll Number</th>
+            <th>Name</th>
+        </tr>
+    </thead>
 
-		<tbody>
-			<tr>
-				<td style="border:1px black solid">1</td>
-				<td style="border:1px black solid">Manish</td>
-			</tr>
-			<tr>
-				<td style="border:1px black solid">2</td>
-				<td style="border:1px black solid">Rohit</td>
-			</tr>
-			<tr>
-				<td style="border:1px black solid">3</td>
-				<td style="border:1px black solid">Saloni</td>
-			</tr>
-		</tbody>
-	</table>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Student A</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Student B</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Student C</td>
+        </tr>
+    </tbody>
+</table>
 
-	<h2>List of medias</h2>
+<!-- REQUIRED HEADING -->
+<h2>List of medias</h2>
 
-	<ol>
-		<li>
-			<img src="https://picsum.photos/id/123/200/300" alt="Rain drop">
-		</li>
+<!-- ORDERED LIST WITH EXACT ITEMS -->
+<ol>
+    <!-- FIRST ITEM: IMAGE -->
+    <li>
+        <img src="https://picsum.photos/id/123/200/300" alt="Random image">
+    </li>
 
-		<li>
-			<video width="300px" height="170px" controls>
-				<source src="http://commondatast
+    <!-- SECOND ITEM: VIDEO WITH SOURCE ELEMENT -->
+    <li>
+        <video width="320" height="240" controls>
+            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+        </video>
+    </li>
+
+    <!-- THIRD ITEM: AUDIO -->
+    <li>
+        <audio src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" controls></audio>
+    </li>
+</ol>
+
+</body>
+</html>
